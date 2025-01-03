@@ -395,7 +395,7 @@ h6 {
     font-size: 16px;
     font-family: mesmerize-el;
 }
-.flip-boxes {
+/* .flip-boxes {
     justify-content: center;
 }
 .flip-box {
@@ -410,6 +410,7 @@ h6 {
     perspective: 1000px;
     z-index: -1;
 }
+
 .imageicon,
 .trillonbox {
     border: 1px solid #c8ad61;
@@ -434,7 +435,64 @@ h6 {
     transform: rotateY(180deg);
     z-index: -1;
     padding: 0 10px;
+} */
+ /* Parent Container */
+.flip-box {
+    position: relative;
+    perspective: 1000px; /* Enables 3D perspective */
+    width: 100%; /* Adjust width as needed */
+    height: 340px; /* Adjust height as needed */
 }
+
+/* Front and Back Faces */
+.flip-box .front,
+.flip-box .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hides the back face when not visible */
+    transition: transform 1s cubic-bezier(0.5, 1, 0.5, 1); /* Smooth rotation */
+}
+
+/* Front Face */
+.flip-box .front {
+    transform: rotateY(0); /* Default state for front */
+    z-index: 2;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b2d61;
+    color: #fff;
+}
+
+/* Back Face */
+.flip-box .back {
+    transform: rotateY(-180deg); /* Default state for back */
+    background-color: #c8ad61;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    z-index: 1;
+}
+
+/* Hover Effect */
+.flip-box:hover .front {
+    transform: rotateY(180deg); /* Rotate front out of view */
+}
+
+.flip-box:hover .back {
+    transform: rotateY(0); /* Rotate back into view */
+}
+
+/* Content Styling */
+.flip-box .content {
+    text-align: center;
+}
+
 .stat-box,
 .trillonbox {
     background-color: #222;
