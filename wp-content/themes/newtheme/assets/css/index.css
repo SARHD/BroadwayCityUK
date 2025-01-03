@@ -1,0 +1,336 @@
+/*--------------------------------------------Section For For Two Alternate Section-------------------------------------*/
+.section-wrapper {
+    background-color: #000;
+    color: #fff;
+}
+
+.custom-card h2 {
+    color: #d4af37;
+}
+
+.main-button {
+    background-color: transparent;
+    border: 1px solid #d4af37;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: all .3s;
+}
+
+.main-button:hover {
+    background-color: #d4af37;
+    color: white;
+}
+
+.borderstyle-gold {
+    border: 1px solid #d4af37;
+    margin: 20px 0;
+}
+
+.nopadding {
+    padding: 0 !important;
+}
+
+.custom-card p{
+    font-family: montserrat;
+    font-size: 15px;
+}
+.custom-card h2{
+    color: white;
+}
+.custom-card h2 span{
+    color: #c6A444;
+}
+.image-side {
+    height: 100%;
+    width: 100%;
+}
+/* Medium Devices (Tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .image-side {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .custom-card p{
+        font-size: 12px;
+        font-weight: 300;
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1024px) {
+    .image-side {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+/**------------------------------------- Section Parallex Slider ----------------------------------------------**/
+
+.paralax-heading{
+    font-size: 50px;
+}
+.paralexx-button{
+    background-color: #000000D4;
+}
+.parallax {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 30px;
+}
+
+/* Text and button overlay */
+.parallax-content {
+    color: white;
+    text-align: center;
+}
+
+
+/**------------------------------------- Section with Bootstrap Grid ----------------------------------------------**/
+.cardsec-heading{
+    margin: 15px 0;
+    text-transform: uppercase;
+    font-size: 15px !important;
+}
+.cardsec-paragraph{
+    color: #c8ad61;
+    font-size: 13px;
+}
+.border-bottom{
+    border-bottom: 1px solid #454545;
+}
+.card-custom {
+    background-color: #000; /* Dark background */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    padding: 2rem 3.7rem;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    transform: scale(1); /* Initial scale */
+}
+
+/* Hover effect similar to top-left */
+.borderbottom-card{
+    border-bottom: solid 1px #454545;
+}
+
+.card-custom:hover {
+    background-color: #c8ad61; 
+    color:white; 
+}
+.card-custom:hover .cardsec-paragraph{
+    color: #fff; 
+}
+
+.card-custom:hover .mobile-icons-for-grid{
+    filter: brightness(5);
+}
+/* Icon and heading */
+.card-custom .card-icon {
+    margin-bottom: 1rem;
+    width: 6.5vw;
+    height: 100%;
+    display: inline-flex;
+
+}
+.card-custom h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.nogap{
+    padding-right: calc(var(--bs-gutter-x)* 0) !important;
+    padding-left: calc(var(--bs-gutter-x)* 0) !important;
+}
+/* Custom font size for mobile */
+
+    .card-custom {
+        padding: 1.5rem;
+    }
+    .borderrigth-card{
+        border-bottom: solid 1px #454545;
+        border-right: 0px;
+    }
+    .mobile-icons-for-grid{
+        width: 100%;
+        height: 100%;
+    }
+    
+@media (min-width: 768px) and (max-width: 1024px){
+    .borderrigth-card{
+        border-right: solid 1px #454545;
+        border-bottom: 0px;
+}
+}
+
+@media (min-width: 1024px) {
+    .borderrigth-card{
+        border-bottom: 0px;
+        border-right: solid 1px #454545;
+    }
+}
+/**------------------------------------- Section Card Slider ----------------------------------------------**/
+
+.hoveritemstyle {
+    position: relative;
+    /* width: 18rem; */
+  }
+  
+  .cardz-img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+  /* Create the overlay using the ::before pseudo-element */
+  .hoveritemstyle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    z-index: 1; /* Ensures the overlay is above the image but below the text */
+  }
+  
+  /* On hover, show the overlay */
+  .hoveritemstyle:hover::before {
+    opacity: 1; /* Show the overlay */
+  }
+  
+  /* Ensures the text and icons are above the overlay */
+  .hoveritemstyle .card-body, .hoveritemstyle a {
+    position: relative;
+    z-index: 2; 
+    text-align: center;
+  }
+  
+  /* Styling for the horizontal line */
+  .slider-card-hr {
+    opacity: 1 !important;
+    color: #c8ad61 !important;
+    margin: 0.20rem !important;
+  }
+  
+  /* Icon styling */
+  .icon-color {
+    filter: invert(0) !important;
+  }
+  
+  /* Uppercase text for card titles */
+  .card-title {
+    text-transform: uppercase;
+  }
+.view-more-link{
+    color: white;
+    text-decoration: none;
+}
+.logoicon-cardslider{
+    width: 30px;
+    height: 30px;
+}
+.buttonforswiper{
+    color: white !important;
+}
+@media (min-width: 1024px) {
+    .logoicon-cardslider{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/*---------------------------------------------Testimonial Slider------------------------------------*/
+.testimonial-item {
+    background-color: #000; 
+    padding: 30px;
+    border-radius: 10px; 
+}
+
+.testimonial-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; 
+}
+
+
+
+.testimonial-name-role h5 {
+    margin: 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; 
+}
+
+
+  .gold-color{
+    color: #c8ad61;
+  }
+  .client-heading{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+  }
+
+    .testimonial-text p {
+        font-size: 14px;
+        text-align: center;
+    }
+    .gold-slider {
+        color: #c8ad61 !important;
+        font-size: 13px;
+        text-align: center;
+    }
+    .light-gery-p{
+        color: #bdbdbd !important;
+        font-size: 13px;
+        text-align: center;
+    }
+    .client-headingdivider{
+        width: 100%;
+        height: 100%;
+        object-fit: none;
+    }
+
+@media (min-width: 1024px) {
+    .testimonial-text p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .gold-slider{
+        font-size: 14px !important;
+      }
+      .light-gery-p{
+        font-size: 14px !important;
+      }
+}
+/*------------------------------------------Image Slider-----------------------------------------------*/
+.imageslider{
+    background-color: #252525;
+}
+    .imagesliderdimension {
+        width: 100px;
+        height: 50px;
+      }  
+  @media screen and (max-width: 800px) {
+      .next {
+          display: none !important;
+      }
+  }
+  @media (min-width: 1024px) {
+    .imagesliderdimension {
+        width: 126px;
+        height: 60px;
+      }
+  }
