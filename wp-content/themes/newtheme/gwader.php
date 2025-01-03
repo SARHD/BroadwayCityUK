@@ -15,7 +15,7 @@ if (!$banner_image_url) {
 <div class="container-fluid">
     <div class="banner-content text-start">
         <h2 class="banner-heading" loading="eager loading">THE CROWN JEWEL</h2>
-        <h3 class="banner-subheading">OF CPEC GWADAR</h3>
+        <h3 class="banner-subheading">OF CPEC GWADAR asd</h3>
     </div>
 </div>
 </div>
